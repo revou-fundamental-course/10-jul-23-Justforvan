@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Kalkulator IMT</title>
+    <script src="./JS/script.js"></script>
+</head>
+<body>
+    <h1>Kalkulator IMT</h1>
+    <div>
+        <p>
+            Apakah Anda ingin tahu tentang komposisi tubuh Anda dan kaitannya dengan kesehatan secara keseluruhan? Jangan khawatir, ada Indeks Massa Tubuh (IMT) yang bisa membantu! IMT adalah cara sederhana namun bermanfaat untuk menilai berat badan Anda berdasarkan tinggi dan berat badan. Seperti memiliki teman kesehatan pribadi yang siap membantu. Dengan menghitung IMT, Anda bisa mengetahui apakah berat badan Anda masuk dalam kisaran yang sehat atau perlu perbaikan. Dengan beberapa pengukuran sederhana dan perhitungan cepat, Anda akan mendapatkan informasi berharga untuk membuat keputusan yang tepat tentang kesehatan Anda. Temukan keajaiban IMT dan mulailah perjalanan penemuan diri dan kesehatan yang lebih baik sekarang!
+        </p>
+        
+    </div>
+    <div>
+        <h2>Data Pengukuran</h2>
+        <form onsubmit="return submitForm(event)">
+            <label>Jenis kelamin</label>
+            <br />
+            <br />
+            <input type="radio" id="laki" name="jenis-kelamin" value="laki-laki">
+            <label for="laki-laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan">
+            <label for="perempuan">Perempuan</label>
+            <br />
+            <br />
+            <label>Berat Badan</label>
+            <input name="berat-badan" id="berat-badan" type="number">
+            <br />
+            <label>Tinggi Badan</label>
+            <input name="tinggi" id="tinggi" type="number">
+            <br />
+            <button type="submit">Ukur IMT</button>
+            <button type="reset">Hapus</button>
+        </form>
+    </div>
+    <div>
+        <h2>Hasil Pengukuran</h2>
+        <div class="box" id="hasil">
+            <h3>ISI DATA TERLEBIH DAHULU!</h3>
+        </div>
+    </div>
+
+
+</body>
+</html>
