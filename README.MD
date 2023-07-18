@@ -12,7 +12,7 @@ Kalkulator IMT ini adalah sebuah aplikasi sederhana yang memungkinkan pengguna u
 
 ## Instalasi
 
-    Tidak perlu menginstall apapun. Dapat diakses melalui [GitHub Pages](https://revou-fundamental-course.github.io/10-jul-23-Justforvan/)
+Tidak perlu menginstall apapun. Dapat diakses melalui [GitHub Pages](https://revou-fundamental-course.github.io/10-jul-23-Justforvan/)
 
 ## Penggunaan
 
