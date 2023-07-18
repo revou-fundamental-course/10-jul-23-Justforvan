@@ -22,6 +22,11 @@ div {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+#gambarhasil {
+    max-width: 5%;
+    max-height: 5%;
+}
+
 h2 {
   color: #086d2a;
 }

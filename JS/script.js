@@ -34,10 +34,6 @@ function submitForm(event) {
       }
     }
     
-    
-    
-
-
     let hasilDiv = document.getElementById('hasil');
     hasilDiv.innerHTML = '<h3>IMT Anda: </h3><p> <strong>' + ukurIMT + '</strong>, termasuk kategori <strong>' + cekKategoriIMT().toUpperCase() + '</strong></p>' +
                         '<p>' + keteranganIMT() + '</p>' + 
