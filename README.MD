@@ -28,4 +28,4 @@ Pastikan untuk menjelaskan perubahan yang Anda usulkan dan mengikuti kode etik p
 
 
 ## Lisensi
-Aplikasi ini dilisensikan di bawah [nama lisensi]. Silakan lihat file LICENSE untuk detail lebih lanjut.
+Aplikasi ini dilisensikan di bawah MIT LICENSE. Silakan lihat file LICENSE untuk detail lebih lanjut.
