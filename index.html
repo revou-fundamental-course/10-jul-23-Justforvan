@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Kalkulator IMT</title>
     <script src="./JS/script.js"></script>
+    
 </head>
 <body>
     <h1>Kalkulator IMT</h1>
@@ -21,19 +23,20 @@
             <label>Jenis kelamin</label>
             <br />
             <br />
-            <input type="radio" id="laki" name="jenis-kelamin" value="laki-laki">
+            <input type="radio" id="laki" name="jenis-kelamin" value="laki-laki" required/>
             <label for="laki-laki">Laki-laki</label>
-            <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan">
+            <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan" required />
             <label for="perempuan">Perempuan</label>
             <br />
             <br />
-            <label>Berat Badan</label>
-            <input name="berat-badan" id="berat-badan" type="number">
+            <label>Berat Badan (kg):<input name="berat-badan" id="berat-badan" type="number" required placeholder="Angka dalam kilogram" /></label>
+           
             <br />
-            <label>Tinggi Badan</label>
-            <input name="tinggi" id="tinggi" type="number">
+            <label>Tinggi Badan (cm):<input name="tinggi" id="tinggi" type="number" required placeholder="Angka dalam centimeter"/></label>
+           
             <br />
             <button type="submit">Ukur IMT</button>
+            <br />
             <button type="reset">Hapus</button>
         </form>
     </div>
