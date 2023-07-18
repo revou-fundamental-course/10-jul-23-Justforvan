@@ -20,15 +20,14 @@ function submitForm(event) {
         return "Kelebihan berat badan";
       } else if (ukurIMT > 27.00) {
         return "Sangat kelebihan berat badan";
-      }
-     ;
+      };
+
     }
     
 
 
     let hasilDiv = document.getElementById('hasil');
-    hasilDiv.innerHTML = '<h3>IMT Anda: </h3><p>' + ukurIMT + '</p>' +
-                        '<h3>Anda termasuk Kategori: </h3><p>' + cekKategoriIMT() + '</p>' +
+    hasilDiv.innerHTML = '<h3>IMT Anda: </h3><p> <strong>' + ukurIMT + '</strong>, termasuk kategori <strong>' + cekKategoriIMT().toUpperCase() + '</strong></p>' +
                         '<button id="reset-ukuran">Ukur Ulang</button>';
   
     // Add an event listener to the "Ukur" button
