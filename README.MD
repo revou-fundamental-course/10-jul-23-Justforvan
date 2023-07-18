@@ -10,9 +10,11 @@ Kalkulator IMT ini adalah sebuah aplikasi sederhana yang memungkinkan pengguna u
     Menyimpan riwayat perhitungan BMI pengguna.
     Menyediakan saran kesehatan berdasarkan hasil BMI.
 
+
 ## Instalasi
 
-Tidak perlu menginstall apapun. Dapat diakses melalui [GitHub Pages](https://revou-fundamental-course.github.io/10-jul-23-Justforvan/)
+Tidak perlu menginstall apapun. Dapat diakses melalui [GitHub Pages](https://revou-fundamental-course.github.io/10-jul-23-Justforvan/).
+
 
 ## Penggunaan
 
@@ -23,11 +25,13 @@ Tidak perlu menginstall apapun. Dapat diakses melalui [GitHub Pages](https://rev
     Untuk melihat riwayat perhitungan BMI, klik tombol "Riwayat".
     Anda dapat menutup aplikasi dengan mengklik tombol "Keluar".
 
+
 ## Kontribusi
 
 Kami mengundang Anda untuk berkontribusi pada pengembangan aplikasi ini. Jika Anda memiliki ide atau perbaikan, silakan buat pull request ke repositori ini.
 
 Pastikan untuk menjelaskan perubahan yang Anda usulkan dan mengikuti kode etik pengembangan yang baik.
+
 
 ## Lisensi
 
