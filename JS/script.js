@@ -5,20 +5,20 @@ function submitForm(event) {
     let tinggi = document.getElementById('tinggi').value;
   
     let fiksasiTinggi = tinggi / 100;
-    let ukurBMI = (beratBadan / (fiksasiTinggi * fiksasiTinggi)).toFixed(2);
+    let ukurIMT = (beratBadan / (fiksasiTinggi * fiksasiTinggi)).toFixed(2);
   
 
 
-    function cekKategoriBMI() {
-      if (ukurBMI < 17.00) {
+    function cekKategoriIMT() {
+      if (ukurIMT < 17.00) {
         return "Sangat kekurangan berat badan";
-      } else if (ukurBMI >= 17.00 && ukurBMI <= 18.40) {
+      } else if (ukurIMT >= 17.00 && ukurIMT <= 18.40) {
         return "Kekurangan berat badan";
-      } else if (ukurBMI > 18.40 && ukurBMI <= 25.00) {
+      } else if (ukurIMT > 18.40 && ukurIMT <= 25.00) {
         return "Berat badan normal";
-      } else if (ukurBMI > 25.00 && ukurBMI <= 27.00) {
+      } else if (ukurIMT > 25.00 && ukurIMT <= 27.00) {
         return "Kelebihan berat badan";
-      } else if (ukurBMI > 27.00) {
+      } else if (ukurIMT > 27.00) {
         return "Sangat kelebihan berat badan";
       }
      ;
@@ -27,8 +27,8 @@ function submitForm(event) {
 
 
     let hasilDiv = document.getElementById('hasil');
-    hasilDiv.innerHTML = '<h3>IMT Anda: </h3><p>' + ukurBMI + '</p>' +
-                        '<h3>Anda termasuk Kategori: </h3><p>' + cekKategoriBMI() + '</p>' +
+    hasilDiv.innerHTML = '<h3>IMT Anda: </h3><p>' + ukurIMT + '</p>' +
+                        '<h3>Anda termasuk Kategori: </h3><p>' + cekKategoriIMT() + '</p>' +
                         '<button id="reset-ukuran">Ukur Ulang</button>';
   
     // Add an event listener to the "Ukur" button
