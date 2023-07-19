@@ -1,14 +1,20 @@
+
+
+//Fungsi untuk mengambil data dari form dengan parameter "event"
 function submitForm(event) {
-  
+    //masukkan masing-masing nilai ke dalam variabel agar mudah dipanggil kembali
     let jenisKelamin = document.querySelector('input[name="jenis-kelamin"]:checked').value;
     let beratBadan = document.getElementById('berat-badan').value;
     let tinggi = document.getElementById('tinggi').value;
   
+    // fiksasi dulu ukuran tinggi. Karena submit dalam centimeter maka dibagi 100 agar menjadi meter
     let fiksasiTinggi = tinggi / 100;
+
+    //mengukur IMT
     let ukurIMT = (beratBadan / (fiksasiTinggi * fiksasiTinggi)).toFixed(2);
   
 
-
+    //mengecek kategori dari IMT
     function cekKategoriIMT() {
       if (ukurIMT < 17.00) {
         return "Sangat kekurangan berat badan";
@@ -24,6 +30,7 @@ function submitForm(event) {
 
     }
 
+    //melakukan generate keterangan IMT berdasar kategori
     function keteranganIMT() {
       if (ukurIMT < 18.40) {
         return "Peringatan! Kekurangan berat badan dapat berdampak serius pada kesehatan Anda. Segera ambil langkah untuk meningkatkan berat badan secara sehat. Konsultasikan dengan profesional kesehatan dan fokus pada pola makan seimbang dan olahraga yang tepat. Prioritaskan kesehatan Anda untuk mencapai berat badan yang sehat dan kesejahteraan yang optimal.";
@@ -34,19 +41,21 @@ function submitForm(event) {
       }
     }
     
+    //manipulasi DOM "hasil" untuk memasukkan hasil, kategori, dan keterangan IMT menggunakan atribut innerHTML
     let hasilDiv = document.getElementById('hasil');
     hasilDiv.innerHTML = '<h3>IMT Anda: </h3><p> <strong>' + ukurIMT + '</strong>, termasuk kategori <strong>' + cekKategoriIMT().toUpperCase() + '</strong></p>' +
                         '<p>' + keteranganIMT() + '</p>' + 
                         '<button id="reset-ukuran">Ukur Ulang</button>';
   
-    // Add an event listener to the "Ukur" button
+    //menambah event listener ke tombol "Ukur" untuk melakukan reset (membersihkan innerHTML yang digenerate sebelumnya)
     let ukurButton = document.getElementById('reset-ukuran');
     ukurButton.addEventListener('click', resetHasilDiv);
   
 
-    return false; // Prevent page reload
+    return false; // mencegah reload pada halaman
   }
   
+  //fungsi untuk melakukan reset. Dengan hoisting, fungsi bisa diletakkan di luar.
   function resetHasilDiv() {
     let hasilDiv = document.getElementById('hasil');
     hasilDiv.innerHTML = '<h3>BERHASIL RESET' + '<br />' + 'Silakan isi data kembali.</h3>'; // Reset the inner HTML

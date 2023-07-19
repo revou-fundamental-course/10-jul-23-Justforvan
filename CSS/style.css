@@ -1,3 +1,4 @@
+/* Styling pada body */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,6 +6,7 @@ body {
   background-color: #f7f7f7;
 }
 
+/* Styling pada heading 1 dan paragraph */
 h1 {
   color: #035700;
   text-align: center;
@@ -14,6 +16,7 @@ p {
   line-height: 1.5;
 }
 
+/* Styling pada div umum */
 div {
   margin-bottom: 20px;
   background-color: #fff;
@@ -22,15 +25,12 @@ div {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#gambarhasil {
-    max-width: 5%;
-    max-height: 5%;
-}
-
+/* Styling pada heading 2*/
 h2 {
   color: #086d2a;
 }
 
+/* Styling pada form dan label serta inputnya */
 form {
   margin-top: 10px;
 }
@@ -97,6 +97,7 @@ button[type="reset"]:hover {
   background-color: #f44336;
 }
 
+/* Styling pada button reset hasil yang dibuat dari manipulasi DOM */
 button[id="reset-ukuran"] {
   
   text-decoration: underline;
@@ -109,6 +110,7 @@ button[id="reset-ukuran"]:hover {
   background-color: #032d5c;
 }
 
+/* Styling spesifik */
 
 h2 + div {
   background-color: #f7f7f7;
@@ -127,6 +129,7 @@ h2 + div {
         flex-basis: 100%;
     }
 
+    /* media query untuk responsivitas */
     @media screen and (min-width: 768px) {
         .flexbox > div {
             flex-basis: 45%;
